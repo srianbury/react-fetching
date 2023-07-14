@@ -1,8 +1,5 @@
 {
   "name": "@srianbury/react-fetching",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/srianbury"
-  },
   "version": "1.0.0",
   "description": "A React component to handle the UI while fetching data.",
   "main": "dist/cjs/index.js",
@@ -16,7 +13,8 @@
     "jest": "jest",
     "jest-watchall": "jest --watchAll",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "publish": "npm publish --access public"
   },
   "author": "srianbury",
   "license": "ISC",
@@ -54,5 +52,13 @@
   "peerDependencies": {
     "react": "^18.2.0",
     "tslib": "^2.5.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srianbury/react-fetching.git"
+  },
+  "bugs": {
+    "url": "https://github.com/srianbury/react-fetching/issues"
+  },
+  "homepage": "https://github.com/srianbury/react-fetching#readme"
 }
