@@ -1,1 +1,1 @@
-export { Fetching } from './components'
+export { Fetching, FetchingContextProvider, type FetchingProps } from './components'
