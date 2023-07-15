@@ -9,10 +9,8 @@ interface YourAppType {
 function YourApp({ children }: YourAppType) {
   return (
     <FetchingContextProvider
-      value={{
-        defaultError: <div>An unexpected error occurred.</div>,
-        defaultLoader: <div>Please wait...</div>,
-      }}
+      defaultError={<div>An unexpected error occurred.</div>}
+      defaultLoader={<div>Please wait...</div>}
     >
       {children}
     </FetchingContextProvider>

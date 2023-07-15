@@ -78,10 +78,8 @@ interface YourAppType {
 function YourApp({ children }: YourAppType) {
   return (
     <FetchingContextProvider
-      value={{
-        defaultError: <div>This is an example of an error.</div>,
-        defaultLoader: <div>Please wait...</div>,
-      }}
+      defaultError={<div>This is an example of an error.</div>}
+      defaultLoader={<div>Please wait...</div>}
     >
       {children}
     </FetchingContextProvider>

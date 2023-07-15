@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
-import { FetchingContext, FetchingContextProvider } from "./FetchingContext";
+import { FetchingContext } from "./FetchingContext";
+import { FetchingContextProvider } from "./FetchingContextProvider";
 import * as CONSTANTS from "./constants";
 
 interface FetchingProps {

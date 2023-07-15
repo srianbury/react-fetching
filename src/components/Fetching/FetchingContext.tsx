@@ -1,8 +1,7 @@
 import { createContext } from "react";
-interface FetchingContextProviderType {
+interface FetchingContextType {
   defaultError?: React.ReactNode;
   defaultLoader?: React.ReactNode;
 }
-const FetchingContext = createContext<FetchingContextProviderType>({});
-const FetchingContextProvider = FetchingContext.Provider;
-export { FetchingContext, FetchingContextProvider };
+const FetchingContext = createContext<FetchingContextType>({});
+export { FetchingContext, type FetchingContextType };
