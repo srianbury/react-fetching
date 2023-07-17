@@ -1,6 +1,6 @@
 {
   "name": "@srianbury/react-fetching",
-  "version": "1.0.0",
+  "version": "2.0.1",
   "description": "A React component to handle the UI while fetching data.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -14,7 +14,8 @@
     "jest-watchall": "jest --watchAll",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "publish": "npm publish --access public"
+    "publish": "npm publish --access public",
+    "test": "yarn jest"
   },
   "author": "srianbury",
   "license": "ISC",
