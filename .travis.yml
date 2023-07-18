@@ -6,7 +6,7 @@ jobs:
   include:
     # Define the release stage that runs semantic-release
     - stage: release
-      node_js: lts/*
+      node_js: 18
       deploy:
         provider: script
         skip_cleanup: true
