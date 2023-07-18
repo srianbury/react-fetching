@@ -25,6 +25,9 @@ run with `yarn jest` or `yarn jest-watchall` to watch for changes
 
 - [ ] NEXT: auto publish/release with testing before release
 
+  - [ ] Setup Auth tokens in Travis CI so it can update the GH repo and npm package
+    - https://semantic-release.gitbook.io/semantic-release/usage/ci-configuration#authentication
+
 - [ ] Thee published app does not have all the code
   - We need to run `yarn rollup` first but it's not working ATM
 - [ ] I published it to npm.pkg.github.com but let's publish it to registry.npmjs.org instead
