@@ -1,12 +1,12 @@
 language: node_js
 node_js:
-  - 16
+  - 20
 
 jobs:
   include:
     # Define the release stage that runs semantic-release
     - stage: release
-      node_js: 16
+      node_js: 20
       deploy:
         provider: script
         skip_cleanup: true
