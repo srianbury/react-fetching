@@ -1,12 +1,14 @@
+dist: jammy
+
 language: node_js
 node_js:
-  - 20
+  - lts/*
 
 jobs:
   include:
     # Define the release stage that runs semantic-release
     - stage: release
-      node_js: 20
+      node_js: lts/*
       deploy:
         provider: script
         skip_cleanup: true
