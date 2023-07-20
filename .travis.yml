@@ -11,6 +11,7 @@ jobs:
       node_js: lts/*
       deploy:
         provider: script
-        skip_cleanup: true
         script:
-          - npx semantic-release
+          - yarn publish
+        on:
+          branches: main
