@@ -12,6 +12,6 @@ jobs:
       deploy:
         provider: script
         script:
-          - yarn publish
+          - yarn release
         on:
-          branches: main
+          branch: main

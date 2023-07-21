@@ -14,7 +14,7 @@
     "jest-watchall": "jest --watchAll",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "publish": "yarn rollup && npx semantic-release",
+    "release": "yarn rollup && npx semantic-release",
     "test": "yarn jest"
   },
   "author": "srianbury",
