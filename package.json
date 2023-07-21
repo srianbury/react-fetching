@@ -9,12 +9,11 @@
   ],
   "types": "dist/index.d.ts",
   "scripts": {
-    "rollup": "rollup -c",
+    "build": "rollup -c",
     "jest": "jest",
     "jest-watchall": "jest --watchAll",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "release": "yarn rollup && npx semantic-release",
     "test": "yarn jest"
   },
   "author": "srianbury",
