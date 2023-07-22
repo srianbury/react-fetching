@@ -14,9 +14,12 @@
     "jest-watchall": "jest --watchAll",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "test": "yarn jest"
+    "test": "yarn jest",
+    "chromatic": "npx chromatic --project-token=chpt_3428357f2d4be6e"
   },
-  "author": "srianbury",
+  "author": {
+    "name": "srianbury"
+  },
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.22.1",
@@ -38,6 +41,7 @@
     "@types/jest": "^29.5.2",
     "@types/react": "^18.2.8",
     "babel-jest": "^29.5.0",
+    "chromatic": "^6.20.0",
     "jest": "^29.6.1",
     "jest-environment-jsdom": "^29.5.0",
     "prop-types": "^15.8.1",
@@ -46,8 +50,8 @@
     "rollup": "^3.23.1",
     "rollup-plugin-dts": "^5.3.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
-    "storybook": "^7.0.18",
     "semantic-release": "^21.0.7",
+    "storybook": "^7.0.18",
     "typescript": "^5.1.3"
   },
   "peerDependencies": {
@@ -61,5 +65,7 @@
   "bugs": {
     "url": "https://github.com/srianbury/react-fetching/issues"
   },
-  "homepage": "https://github.com/srianbury/react-fetching#readme"
+  "homepage": "https://github.com/srianbury/react-fetching#readme",
+  "readme": "ERROR: No README data found!",
+  "_id": "@srianbury/react-fetching@2.0.1"
 }

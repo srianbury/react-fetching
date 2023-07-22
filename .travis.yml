@@ -18,3 +18,8 @@ jobs:
           - npx semantic-release
         on:
           branch: main
+
+    - name: "Publish Storybook to Chromatic"
+      script: yarn chromatic
+      on:
+        branch: main
