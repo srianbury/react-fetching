@@ -1,7 +1,7 @@
 {
   "name": "@srianbury/react-fetching",
   "version": "2.0.1",
-  "description": "A React component to handle the UI while fetching data.",
+  "description": "A helper React component to display a fallback while you wait for something to load.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
@@ -14,8 +14,9 @@
     "jest-watchall": "jest --watchAll",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
+    "build-storybook-public": "storybook build -s public",
     "test": "yarn jest",
-    "chromatic": "npx chromatic --project-token=chpt_3428357f2d4be6e"
+    "chromatic": "npx chromatic"
   },
   "author": {
     "name": "srianbury"
