@@ -14,7 +14,6 @@
     "jest-watchall": "jest --watchAll",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "build-storybook-public": "storybook build -s public",
     "test": "yarn jest",
     "chromatic": "npx chromatic"
   },

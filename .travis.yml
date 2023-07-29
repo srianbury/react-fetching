@@ -20,7 +20,7 @@ script:
   - yarn
   - yarn test
   - yarn build
-  - yarn build-storybook-public
+  - yarn build-storybook
 
 jobs:
   include:
