@@ -4,35 +4,39 @@ language: node_js
 node_js:
   - lts/*
 
+branches:
+  only:
+    - main
+
+cache:
+  yarn: true
+  directories:
+    - node_modules
+
+before_script:
+  - npm install -g yarn@latest
+
+script:
+  - yarn
+  - yarn test
+  - yarn build
+  - yarn build-storybook-public
+
 jobs:
   include:
     # Define the release stage that runs semantic-release
-    - stage: release
+    - name: "Publish to npm"
       node_js: lts/*
       deploy:
         provider: script
         skip_cleanup: true
-        before_script:
-          - yarn build
         script:
           - npx semantic-release
-        on:
-          branch: main
 
     - name: "Deploy Storybook to GH Pages"
       deploy:
-        before_script:
-          - yarn build-storybook-public
         provider: pages
         skip_cleanup: true
         github-token: $GITHUB_TOKEN
         local_dir: storybook-static
-        repo: srianbury/react-fetching
         target_branch: gh-pages
-        on:
-          branch: main
-
-    - name: "Publish Storybook to Chromatic"
-      script: yarn chromatic
-      on:
-        branch: main
