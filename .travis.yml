@@ -4,10 +4,6 @@ language: node_js
 node_js:
   - lts/*
 
-branches:
-  only:
-    - main
-
 cache:
   yarn: true
   directories:
@@ -32,6 +28,8 @@ jobs:
         skip_cleanup: true
         script:
           - npx semantic-release
+        on:
+          branch: main
 
     - name: "Deploy Storybook to GH Pages"
       deploy:
@@ -40,3 +38,5 @@ jobs:
         github-token: $GITHUB_TOKEN
         local_dir: storybook-static
         target_branch: gh-pages
+        on:
+          branch: main
