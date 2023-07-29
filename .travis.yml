@@ -18,25 +18,13 @@ script:
   - yarn build
   - yarn build-storybook
 
-jobs:
-  include:
-    # Define the release stage that runs semantic-release
-    - name: "Publish to npm"
-      node_js: lts/*
-      deploy:
-        provider: script
-        skip_cleanup: true
-        script:
-          - npx semantic-release
-        on:
-          branch: main
+deploy:
+  provider: script
+  skip_cleanup: true
+  script:
+    - npx semantic-release
+  on:
+    branch: main
 
-    - name: "Deploy Storybook to GH Pages"
-      deploy:
-        provider: pages
-        skip_cleanup: true
-        github-token: $GITHUB_TOKEN
-        local_dir: storybook-static
-        target_branch: gh-pages
-        on:
-          branch: main
+after_success:
+  - yarn deploy-storybook
